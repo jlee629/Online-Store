@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f1f3f5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginScreenController">
+   <children>
+      <Label layoutX="360.0" layoutY="61.0" prefHeight="39.0" prefWidth="214.0" text="Good to see you!" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="111.0" text="Email" />
+      <TextField fx:id="emailField" layoutX="360.0" layoutY="135.0" prefHeight="26.0" prefWidth="208.0" promptText="Email" />
+      <Label layoutX="361.0" layoutY="172.0" text="Password" />
+      <PasswordField fx:id="passwordField" layoutX="360.0" layoutY="193.0" prefHeight="26.0" prefWidth="208.0" promptText="Password" />
+      <Button fx:id="loginBtn" layoutX="360.0" layoutY="254.0" mnemonicParsing="false" onAction="#authenticate" prefHeight="30.0" prefWidth="208.0" style="-fx-cursor: hand; -fx-background-color: #1cbec1;" text="Login" textFill="#f4f6f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fx:id="invalidTextLabel" fill="#f40303" layoutX="326.0" layoutY="337.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INVALID ATTEMPT" textAlignment="CENTER" wrappingWidth="276.0000000000001">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <BorderPane layoutY="-3.0" prefHeight="410.0" prefWidth="324.0" style="-fx-background-color: #1cbec1;">
+         <center>
+            <Text fill="#f0f4f7" strokeType="OUTSIDE" strokeWidth="0.0" text="Centennial Online Store" textAlignment="CENTER" wrappingWidth="323.2000274658202" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
